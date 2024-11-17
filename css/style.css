@@ -31,7 +31,93 @@
 body {
     background: var(--colorYellow);
     font-family: "Figtree";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 100vh;
+    margin: 0;
+    margin-inline: 1rem;
 }
+
+.card {
+    background: var(--colorWhite);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    border: inset 1px solid var(--colorGray950);
+    inline-size: 100%;
+    box-sizing: border-box;
+    max-inline-size: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    box-shadow: 8px 8px var(--colorGray950);
+}
+
+.card_container {
+    border-radius: .625rem;
+    overflow: hidden;
+}
+
+.card_img {
+    vertical-align: middle;
+    inline-size: 100%;
+    inline-size: auto;
+}
+
+.card_tag,
+.card_date,
+.card_title {
+    line-height: 150%;
+    color: var(--colorGray950);
+    font-weight: 900;
+}
+
+
+.card_tag {
+    background: var(--colorYellow);
+    padding: .25rem .75rem;
+    font-size: .75rem;
+    border-radius: .25rem;
+}
+
+.card_date {
+    margin-block: .75rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.card_title {
+    margin-block: 0 .75rem;
+
+    &:hover {
+        color: var(--colorYellow);
+        cursor: pointer;
+    }
+}
+
+.card_description {
+    margin-block: 0;
+    font-size: .875rem;
+    color: var(--colorGray500);
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.card_author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .75rem;
+}
+
+.card_name {
+    line-height: 150%;
+    font-size: .875rem;
+    color: var(--colorGray950);
+    font-weight: 900;
+}
+
 
 
 
