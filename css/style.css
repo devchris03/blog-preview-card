@@ -43,7 +43,7 @@ body {
     background: var(--colorWhite);
     padding: 1.5rem;
     border-radius: 1.25rem;
-    border: inset 1px solid var(--colorGray950);
+    border: 1px solid var(--colorGray950);
     inline-size: 100%;
     box-sizing: border-box;
     max-inline-size: 24rem;
@@ -84,7 +84,7 @@ body {
 .card_date {
     margin-block: .75rem;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: .75rem;
 }
 
 .card_title {
